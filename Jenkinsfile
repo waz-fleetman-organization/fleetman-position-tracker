@@ -2,8 +2,8 @@ pipeline {
    agent any
 
    environment {
-     ORGANIZATION_NAME = waz-fleetman-organization
-     YOUR_DOCKERHUB_USERNAME = wazdev
+     ORGANIZATION_NAME = "waz-fleetman-organization"
+     YOUR_DOCKERHUB_USERNAME = "wazdev"
      SERVICE_NAME = "fleetman-position-tracker"
      REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
    }
